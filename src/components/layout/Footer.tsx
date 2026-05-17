@@ -6,16 +6,18 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col space-y-4">
-            {/* Logo Space */}
-            <div className="h-8 w-32 flex items-center justify-center">
-              <Image
-                src="/logo.jpeg"   // place your logo file in /public/logo.png
-                alt="CareerQue Logo"
-                width={100}
-                height={20}
-                className="object-contain"
-              />
-            </div>
+            <Link href="/" className="flex items-center space-x-2 mb-4">
+              {/* Logo Space */}
+              <div className="h-16 w-56 flex items-center justify-start">
+                <Image
+                  src="/logo.jpg"
+                  alt="CareerQue Logo"
+                  width={250}
+                  height={60}
+                  className="object-contain"
+                />
+              </div>
+            </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400">
               A premium capability development and consulting brand empowering students and professionals to excel.
             </p>

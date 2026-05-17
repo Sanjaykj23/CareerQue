@@ -32,11 +32,11 @@ export function DualCore() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:h-[600px]">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Student Panel - Vibrant/Light */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col justify-end p-8 md:p-10 min-h-[400px] lg:min-h-0"
+            className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col justify-end p-8 md:p-10 min-h-[400px] h-full"
           >
             <div className="absolute top-8 right-8 md:top-10 md:right-10 p-4 bg-brand-teal/10 rounded-2xl transition-transform group-hover:scale-110 duration-300">
               <GraduationCap className="h-10 w-10 md:h-12 md:w-12 text-brand-teal" />
@@ -64,7 +64,7 @@ export function DualCore() {
           {/* Corporate Panel - Premium/Light to Dark */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-brand-blue dark:to-slate-900 border border-blue-100 dark:border-slate-800 shadow-lg flex flex-col justify-end p-8 md:p-10 min-h-[400px] lg:min-h-0"
+            className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-brand-blue dark:to-slate-900 border border-blue-100 dark:border-slate-800 shadow-lg flex flex-col justify-end p-8 md:p-10 min-h-[400px] h-full"
           >
             <div className="absolute top-8 right-8 md:top-10 md:right-10 p-4 bg-brand-blue/10 dark:bg-white/10 rounded-2xl backdrop-blur-sm transition-transform group-hover:scale-110 duration-300">
               <Building2 className="h-10 w-10 md:h-12 md:w-12 text-brand-orange" />
