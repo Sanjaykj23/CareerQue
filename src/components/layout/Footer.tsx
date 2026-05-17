@@ -19,7 +19,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              A premium capability development and consulting brand empowering students and professionals to excel.
+              CareerQue helps students, institutions, and organizations grow through clarity, communication, capability development, and structured consulting solutions.
             </p>
           </div>
 

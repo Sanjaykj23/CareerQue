@@ -33,7 +33,7 @@ export function ReportCarousel() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-brand-blue dark:text-white sm:text-4xl">
-              Data-Driven <span className="text-brand-orange">Insights</span>
+              Sample <span className="text-brand-orange">Report & Insights</span>
             </h2>
             <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
               Preview our comprehensive analytical reports and diagnostics.

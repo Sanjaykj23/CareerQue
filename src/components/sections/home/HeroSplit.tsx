@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import { GraduationCap, Building2, Briefcase, Users } from "lucide-react";
 
 export function HeroSplit() {
   return (
@@ -42,12 +43,12 @@ export function HeroSplit() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-brand-blue dark:text-white leading-[1.1]">
             Helping Students and Organizations <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-orange">
-              Grow with Clarity, Capability, and Confidence
+              Grow with Clarity and Confidence
             </span>
           </h1>
           
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-            CareerQue helps students, institutions, and organizations build clarity, communication, capability, and growth through structured guidance, modern frameworks, and practical development solutions
+            CareerQue helps students, institutions, and organizations build clarity, communication, and capability through structured guidance, practical frameworks, and development solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-8 lg:pt-12 pb-16 lg:pb-24">
@@ -64,25 +65,106 @@ export function HeroSplit() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] w-full rounded-2xl border border-white/20 glass dark:bg-white/5 bg-white/40 flex items-center justify-center overflow-hidden shadow-2xl"
+          className="relative min-h-[400px] lg:min-h-[500px] w-full rounded-2xl border border-slate-800 bg-slate-900/50 flex items-center justify-center overflow-hidden shadow-2xl"
         >
-          {/* 3D Abstract Visual Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue/20 via-brand-teal/10 to-brand-orange/20 dark:from-brand-blue/40 dark:via-brand-teal/20 dark:to-brand-orange/20 mix-blend-overlay"></div>
+          {/* Animated Background Gradients */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 via-brand-teal/5 to-brand-orange/10 mix-blend-overlay"></div>
           
-          <div className="relative z-10 flex flex-col items-center">
+          {/* Central Hub */}
+          <div className="relative z-20 flex flex-col items-center justify-center">
             <motion.div
               animate={{ 
-                rotateY: [0, 180, 360],
-                rotateX: [0, 45, 0]
+                boxShadow: ["0px 0px 20px 0px rgba(0,166,166,0.2)", "0px 0px 60px 20px rgba(0,166,166,0.6)", "0px 0px 20px 0px rgba(0,166,166,0.2)"]
               }}
-              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-              className="w-48 h-48 border-4 border-brand-teal/50 rounded-xl flex items-center justify-center shadow-[0_0_50px_rgba(0,166,166,0.3)] backdrop-blur-md"
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="h-32 w-32 rounded-full border border-brand-teal/50 bg-slate-950/80 backdrop-blur-xl flex items-center justify-center z-20 shadow-2xl"
             >
-              <div className="w-24 h-24 bg-brand-orange/80 rounded-full blur-xl animate-pulse"></div>
+              <span className="text-xl font-bold text-white text-center leading-tight">Career<br/><span className="text-brand-teal">Que</span></span>
             </motion.div>
-            <p className="mt-8 text-sm font-medium tracking-widest text-slate-500 dark:text-slate-400 uppercase">
-              [ Interactive 3D Growth Visual ]
-            </p>
+          </div>
+
+          {/* Floating Entities */}
+          <div className="absolute inset-0 z-10 overflow-hidden">
+            {/* Student 1 */}
+            <motion.div
+              initial={{ x: -100, y: -150, opacity: 0 }}
+              animate={{ x: [-20, 10, -20], y: [-20, 20, -20], opacity: 1 }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-[10%] left-[5%] md:top-[15%] md:left-[10%] flex items-center gap-3 bg-slate-800/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-full shadow-lg"
+            >
+              <div className="bg-brand-blue/20 p-2 rounded-full text-blue-400">
+                <GraduationCap className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-white">Student</span>
+                <span className="text-[10px] text-slate-400">Needs Clarity</span>
+              </div>
+            </motion.div>
+
+            {/* Organization 1 */}
+            <motion.div
+              initial={{ x: 100, y: -100, opacity: 0 }}
+              animate={{ x: [20, -10, 20], y: [-10, 30, -10], opacity: 1 }}
+              transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              className="absolute top-[15%] right-[2%] md:top-[20%] md:right-[5%] flex items-center gap-3 bg-slate-800/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-full shadow-lg"
+            >
+              <div className="bg-brand-orange/20 p-2 rounded-full text-brand-orange">
+                <Building2 className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-white">Organization</span>
+                <span className="text-[10px] text-slate-400">Needs Capability</span>
+              </div>
+            </motion.div>
+
+            {/* Professional 1 */}
+            <motion.div
+              initial={{ x: -80, y: 150, opacity: 0 }}
+              animate={{ x: [-30, 10, -30], y: [10, -20, 10], opacity: 1 }}
+              transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              className="absolute bottom-[15%] left-[2%] md:bottom-[20%] md:left-[10%] flex items-center gap-3 bg-slate-800/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-full shadow-lg"
+            >
+              <div className="bg-brand-teal/20 p-2 rounded-full text-brand-teal">
+                <Briefcase className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-white">Professional</span>
+                <span className="text-[10px] text-slate-400">Needs Growth</span>
+              </div>
+            </motion.div>
+
+            {/* Institution 1 */}
+            <motion.div
+              initial={{ x: 100, y: 150, opacity: 0 }}
+              animate={{ x: [20, -20, 20], y: [20, -10, 20], opacity: 1 }}
+              transition={{ duration: 11, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute bottom-[10%] right-[5%] md:bottom-[15%] md:right-[10%] flex items-center gap-3 bg-slate-800/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-full shadow-lg"
+            >
+              <div className="bg-purple-500/20 p-2 rounded-full text-purple-400">
+                <Users className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-white">Institution</span>
+                <span className="text-[10px] text-slate-400">Needs Frameworks</span>
+              </div>
+            </motion.div>
+            
+            {/* Pulsing connection nodes */}
+            <motion.div 
+              animate={{ opacity: [0, 1, 0], scale: [0.5, 1.5, 0.5] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-[35%] left-[30%] w-2 h-2 rounded-full bg-brand-blue shadow-[0_0_10px_rgba(15,76,129,0.8)]"
+            />
+            <motion.div 
+              animate={{ opacity: [0, 1, 0], scale: [0.5, 1.5, 0.5] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              className="absolute top-[40%] right-[35%] w-2 h-2 rounded-full bg-brand-orange shadow-[0_0_10px_rgba(255,145,77,0.8)]"
+            />
+            <motion.div 
+              animate={{ opacity: [0, 1, 0], scale: [0.5, 1.5, 0.5] }}
+              transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              className="absolute bottom-[40%] left-[35%] w-2 h-2 rounded-full bg-brand-teal shadow-[0_0_10px_rgba(0,166,166,0.8)]"
+            />
           </div>
         </motion.div>
 

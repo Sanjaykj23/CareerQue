@@ -45,11 +45,11 @@ export function DualCore() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-brand-blue dark:text-white mb-4">For Students & Institutions</h3>
               <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-md">
-                Master communication, map your career trajectory, and build the capabilities that top employers demand.
+                Support students with career clarity, communication confidence, academic growth, and employability readiness through structured guidance and development solutions
               </p>
               <Button size="lg" className="group/btn bg-brand-teal hover:bg-brand-teal/90 text-white rounded-full pl-6 pr-2" asChild>
                 <Link href="/student-solutions">
-                  Enter Growth Hub
+                  Explore Student Solutions
                   <span className="ml-4 bg-white/20 p-2 rounded-full group-hover/btn:translate-x-1 transition-transform">
                     <ArrowRight className="h-4 w-4" />
                   </span>
@@ -73,11 +73,11 @@ export function DualCore() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-brand-blue dark:text-white mb-4">For Corporate Organizations</h3>
               <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-md">
-                Diagnose organizational health, build leadership pipelines, and execute strategy with unparalleled discipline.
+               Help organizations identify leadership gaps, improve execution discipline, strengthen people capability, and build better alignment across teams.
               </p>
               <Button size="lg" className="group/btn bg-brand-blue hover:bg-brand-blue/90 dark:bg-white dark:hover:bg-slate-100 text-white dark:text-brand-blue rounded-full pl-6 pr-2" asChild>
                 <Link href="/corporate-solutions">
-                  Enter Intelligence Engine
+                  Explore Corporate Solutions
                   <span className="ml-4 bg-white/20 dark:bg-brand-blue/10 p-2 rounded-full group-hover/btn:translate-x-1 transition-transform">
                     <ArrowRight className="h-4 w-4" />
                   </span>
