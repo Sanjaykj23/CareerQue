@@ -1,162 +1,106 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { BarChart3, Building2, Workflow, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
+import { ActivitySquare, Target, Search, Compass } from "lucide-react";
 
-export default function CorporateSolutionsPage() {
+export default function CorporateSolutions() {
+  const sections = [
+    {
+      title: "OrgPulse Organizational Diagnostics",
+      desc: "OrgPulse helps organizations identify leadership gaps, execution issues, communication patterns, accountability challenges, HR process gaps, and organizational improvement areas.",
+      points: [
+        "Organizational diagnostics",
+        "Leadership insights",
+        "Execution gap identification",
+        "HR effectiveness review",
+        "Action-oriented recommendations"
+      ],
+      icon: ActivitySquare,
+      color: "text-blue-500 bg-blue-50 dark:bg-blue-900/20"
+    },
+    {
+      title: "Leadership and Execution Effectiveness",
+      desc: "CareerQue helps leadership teams improve alignment, accountability, communication, decision quality, and execution discipline.",
+      points: [
+        "Leadership effectiveness",
+        "Meeting and decision insights",
+        "Accountability culture",
+        "Execution discipline",
+        "Governance rhythm"
+      ],
+      icon: Target,
+      color: "text-orange-500 bg-orange-50 dark:bg-orange-900/20"
+    },
+    {
+      title: "HR Effectiveness Review",
+      desc: "CareerQue reviews key HR practices, systems, and people processes to identify gaps, strengthen alignment, and improve organizational effectiveness.",
+      points: [
+        "HR process review",
+        "Performance management review",
+        "Competency framework review",
+        "Learning and development review",
+        "Employee engagement and support review",
+        "HR compliance and risk observations"
+      ],
+      icon: Search,
+      color: "text-teal-500 bg-teal-50 dark:bg-teal-900/20"
+    },
+    {
+      title: "Strategic HR Advisory",
+      desc: "CareerQue provides consulting support to strengthen performance systems, competency frameworks, leadership development, HR processes, and people practices.",
+      points: [
+        "Performance management",
+        "Competency frameworks",
+        "Leadership development",
+        "HR process strengthening",
+        "People practice improvement"
+      ],
+      icon: Compass,
+      color: "text-indigo-500 bg-indigo-50 dark:bg-indigo-900/20"
+    }
+  ];
+
   return (
-    // Enforcing dark mode for this page using specific classes if ThemeProvider doesn't override,
-    // but the design will inherently use dark colors.
-    <div className="min-h-screen bg-brand-darker text-slate-300 pb-32">
-      {/* Header */}
-      <section className="pt-24 pb-16 px-4 md:px-6 container mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="inline-flex items-center space-x-2 rounded-full bg-brand-blue/20 border border-brand-blue/30 px-3 py-1 text-sm font-medium text-brand-blue mb-6">
-            <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse"></span>
-            <span>The Intelligence Engine</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-            Execute Strategy with <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-white">Discipline</span>
+    <main className="min-h-screen bg-slate-50 dark:bg-brand-dark transition-colors duration-300 py-24">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-brand-blue dark:text-white mb-6">
+            Corporate Solutions
           </h1>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Data-driven HR transformation, capability diagnostics, and executive leadership pipelines.
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            CareerQue supports organizations with leadership diagnostics, HR effectiveness reviews, execution frameworks, and strategic HR consulting.
           </p>
-        </motion.div>
-      </section>
-
-      <section className="container mx-auto px-4 md:px-6 space-y-24">
-        
-        {/* OrgPulse Dashboard Mockup */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="order-2 lg:order-1"
-          >
-            <h2 className="text-3xl font-bold text-white mb-4 flex items-center">
-              <BarChart3 className="mr-3 h-8 w-8 text-brand-blue" /> OrgPulse
-            </h2>
-            <p className="text-slate-400 mb-6 text-lg">
-              Diagnose organizational health in real-time. Uncover capability gaps before they impact your bottom line.
-            </p>
-            <ul className="space-y-4 mb-8">
-              {["Real-time capability mapping", "Predictive attrition models", "Cultural alignment scoring"].map((item, i) => (
-                <li key={i} className="flex items-center text-slate-300">
-                  <CheckCircle2 className="h-5 w-5 text-brand-blue mr-3" /> {item}
-                </li>
-              ))}
-            </ul>
-            <Button className="bg-brand-blue text-white hover:bg-brand-blue/90" size="lg">Request Demo</Button>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="order-1 lg:order-2 rounded-2xl bg-slate-900 border border-slate-800 p-6 shadow-2xl relative overflow-hidden"
-          >
-            {/* Dashboard Header */}
-            <div className="flex justify-between items-center mb-8 border-b border-slate-800 pb-4">
-              <div className="text-sm font-semibold text-white">Health Index</div>
-              <div className="text-xs bg-brand-blue/20 text-brand-blue px-2 py-1 rounded">Live Data</div>
-            </div>
-            
-            {/* Metrics */}
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="bg-slate-800/50 p-4 rounded-xl">
-                <div className="text-xs text-slate-400 mb-1">Execution Discipline</div>
-                <div className="text-2xl font-bold text-white">84%</div>
-                <motion.div initial={{ width: 0 }} whileInView={{ width: "84%" }} className="h-1 mt-2 bg-brand-blue rounded-full" />
-              </div>
-              <div className="bg-slate-800/50 p-4 rounded-xl">
-                <div className="text-xs text-slate-400 mb-1">Leadership Pipeline</div>
-                <div className="text-2xl font-bold text-white">Critical</div>
-                <motion.div initial={{ width: 0 }} whileInView={{ width: "40%" }} className="h-1 mt-2 bg-red-500 rounded-full" />
-              </div>
-            </div>
-
-            {/* Chart Area */}
-            <div className="h-32 flex items-end space-x-2">
-              {[40, 55, 45, 70, 65, 80, 90].map((h, i) => (
-                <motion.div 
-                  key={i} 
-                  initial={{ height: 0 }}
-                  whileInView={{ height: `${h}%` }}
-                  transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="w-full bg-brand-blue/50 rounded-t-sm hover:bg-brand-blue transition-colors cursor-pointer"
-                />
-              ))}
-            </div>
-          </motion.div>
         </div>
 
-        {/* Leadership Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-8 shadow-2xl"
-          >
-             <div className="flex justify-between items-center mb-10">
-               <div className="flex space-x-2">
-                 <div className="h-3 w-3 rounded-full bg-red-500"></div>
-                 <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-                 <div className="h-3 w-3 rounded-full bg-green-500"></div>
-               </div>
-             </div>
-             
-             <div className="space-y-6">
-               {[1, 2, 3].map((i) => (
-                 <motion.div 
-                    key={i}
-                    whileHover={{ scale: 1.02, backgroundColor: "rgba(30, 41, 59, 0.8)" }}
-                    className="p-4 rounded-xl border border-slate-800 bg-slate-800/30 flex items-center justify-between cursor-pointer transition-colors"
-                 >
-                   <div className="flex items-center space-x-4">
-                     <div className="h-10 w-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-xs">VP</div>
-                     <div>
-                       <div className="text-sm font-semibold text-white">Executive Profile {i}</div>
-                       <div className="text-xs text-slate-500">Readiness: High</div>
-                     </div>
-                   </div>
-                   <div className="text-brand-blue"><ArrowRight className="h-4 w-4" /></div>
-                 </motion.div>
-               ))}
-             </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold text-white mb-4 flex items-center">
-              <Workflow className="mr-3 h-8 w-8 text-brand-orange" /> Leadership Engine
-            </h2>
-            <p className="text-slate-400 mb-6 text-lg">
-              Don't leave succession to chance. Build a robust pipeline of capable leaders ready to execute your strategic vision.
-            </p>
-            <div className="space-y-4">
-              <div className="p-4 border-l-2 border-brand-orange bg-brand-orange/5 text-slate-300">
-                <span className="font-bold text-white block mb-1">Identify</span>
-                Data-backed identification of high-potential talent.
+        <div className="grid md:grid-cols-2 gap-8">
+          {sections.map((section, index) => (
+            <div key={index} className="glass-panel border border-slate-200 dark:border-slate-800 rounded-3xl p-8 bg-white/80 dark:bg-slate-900/80 shadow-lg flex flex-col">
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${section.color}`}>
+                <section.icon className="w-7 h-7" />
               </div>
-              <div className="p-4 border-l-2 border-brand-blue bg-brand-blue/5 text-slate-300">
-                <span className="font-bold text-white block mb-1">Develop</span>
-                Targeted coaching frameworks to close capability gaps.
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">{section.title}</h2>
+              <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed flex-1">
+                {section.desc}
+              </p>
+              <div className="space-y-3 bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+                <span className="text-sm font-semibold text-slate-900 dark:text-white uppercase tracking-wider mb-2 block">Key Areas:</span>
+                {section.points.map((point, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
+                    <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">{point}</span>
+                  </div>
+                ))}
               </div>
             </div>
-          </motion.div>
+          ))}
         </div>
 
-      </section>
-    </div>
+        <div className="mt-16 text-center glass-panel border border-brand-teal/20 bg-brand-teal/5 dark:bg-brand-teal/10 rounded-3xl p-10">
+          <h3 className="text-2xl font-bold text-brand-blue dark:text-white mb-4">Want to improve leadership and organizational effectiveness?</h3>
+          <Button size="lg" className="h-12 px-8" asChild>
+            <Link href="/contact">Explore Corporate Consulting</Link>
+          </Button>
+        </div>
+      </div>
+    </main>
   );
 }

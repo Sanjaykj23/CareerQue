@@ -41,22 +41,22 @@ export function HeroSplit() {
           </div>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-brand-blue dark:text-white leading-[1.1]">
-            Helping Students and Organizations <br/>
+            Helping Students, Institutions, and Organizations <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-orange">
               Grow with Clarity and Confidence
             </span>
           </h1>
           
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-            CareerQue helps students, institutions, and organizations build clarity, communication, and capability through structured guidance, practical frameworks, and development solutions.
+            CareerQue helps build clarity, communication, capability, and growth through structured guidance, learning support, HR effectiveness reviews, and consulting solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-8 lg:pt-12 pb-16 lg:pb-24">
             <Button size="lg" className="h-14 px-8 text-base shadow-lg shadow-brand-blue/20" asChild>
-              <Link href="/student-solutions">Explore Student Solutions</Link>
+              <Link href="#solutions">Explore Solutions</Link>
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-transparent border-slate-300 dark:border-slate-700 dark:text-white dark:hover:bg-white/5" asChild>
-              <Link href="/corporate-solutions">Explore Corporate Solutions</Link>
+              <Link href="/contact">Contact CareerQue</Link>
             </Button>
           </div>
         </motion.div>

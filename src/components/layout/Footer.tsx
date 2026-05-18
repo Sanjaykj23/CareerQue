@@ -19,39 +19,44 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              CareerQue helps students, institutions, and organizations grow through clarity, communication, capability development, and structured consulting solutions.
+              CareerQue helps students, institutions, and organizations grow through clarity, communication, structured learning support, HR effectiveness reviews, and consulting solutions.
             </p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Solutions</h3>
             <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-              <li><Link href="/student-solutions" className="hover:text-brand-teal transition-colors">Student Solutions</Link></li>
+              <li><Link href="/student-growth" className="hover:text-brand-teal transition-colors">Student Growth Solutions</Link></li>
+              <li><Link href="/institution-solutions" className="hover:text-brand-teal transition-colors">Institution Solutions</Link></li>
               <li><Link href="/corporate-solutions" className="hover:text-brand-teal transition-colors">Corporate Solutions</Link></li>
-              <li><Link href="/products" className="hover:text-brand-teal transition-colors">Products</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-teal transition-colors">SpeakSmart</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-teal transition-colors">CareerQue Academy</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-teal transition-colors">OrgPulse</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-teal transition-colors">HR Effectiveness Review</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Company</h3>
             <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-              <li><Link href="/about" className="hover:text-brand-teal transition-colors">About Us</Link></li>
-              <li><Link href="/sample-reports" className="hover:text-brand-teal transition-colors">Sample Reports</Link></li>
+              <li><Link href="/" className="hover:text-brand-teal transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-brand-teal transition-colors">About</Link></li>
               <li><Link href="/contact" className="hover:text-brand-teal transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Legal</h3>
+            <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Contact</h3>
             <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-              <li><Link href="/privacy" className="hover:text-brand-teal transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-brand-teal transition-colors">Terms of Service</Link></li>
+              <li><a href="mailto:#" className="hover:text-brand-teal transition-colors">Email: To be added</a></li>
+              <li><a href="#" className="hover:text-brand-teal transition-colors">WhatsApp: To be added</a></li>
+              <li><a href="#" className="hover:text-brand-teal transition-colors">LinkedIn: To be added</a></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8 text-center text-sm text-slate-500 dark:text-slate-400">
-          <p>&copy; {new Date().getFullYear()} CareerQue. All rights reserved.</p>
+          <p>&copy; 2026 CareerQue. All rights reserved.</p>
         </div>
       </div>
     </footer>

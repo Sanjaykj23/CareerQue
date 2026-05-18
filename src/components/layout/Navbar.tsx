@@ -18,11 +18,11 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Student Solutions", href: "/student-solutions" },
+    { name: "Student Growth", href: "/student-growth" },
+    { name: "Institution Solutions", href: "/institution-solutions" },
     { name: "Corporate Solutions", href: "/corporate-solutions" },
-    { name: "Products", href: "/products" },
     { name: "About", href: "/about" },
-    { name: "Sample Reports", href: "/sample-reports" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -67,7 +67,7 @@ export function Navbar() {
               href="/contact"
               className="inline-flex h-9 items-center justify-center rounded-md bg-brand-orange px-4 py-2 text-sm font-medium text-white shadow transition-transform hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             >
-              Get in Touch
+              Schedule a Discussion
             </Link>
           </div>
         </nav>
@@ -116,7 +116,7 @@ export function Navbar() {
                   href="/contact"
                   className="flex w-full items-center justify-center rounded-md bg-brand-orange px-4 py-3 text-sm font-medium text-white shadow"
                 >
-                  Get in Touch
+                  Schedule a Discussion
                 </Link>
               </div>
             </nav>
