@@ -75,12 +75,12 @@ export function HeroSplit() {
           <div className="relative z-20 flex flex-col items-center justify-center">
             <motion.div
               animate={{ 
-                boxShadow: ["0px 0px 20px 0px rgba(0,166,166,0.2)", "0px 0px 60px 20px rgba(0,166,166,0.6)", "0px 0px 20px 0px rgba(0,166,166,0.2)"]
+                boxShadow: ["0px 0px 15px 0px rgba(0,166,166,0.2)", "0px 0px 45px 15px rgba(0,166,166,0.5)", "0px 0px 15px 0px rgba(0,166,166,0.2)"]
               }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="h-20 w-56 sm:h-24 sm:w-64 rounded-2xl border border-brand-teal/50 bg-slate-950/80 backdrop-blur-xl flex items-center justify-center z-20 shadow-2xl px-4 sm:px-6"
+              className="h-16 w-48 sm:h-20 sm:w-56 rounded-xl border border-brand-teal/30 bg-white flex items-center justify-center z-20 shadow-xl px-3 sm:px-4"
             >
-              <Image src="/logo.jpg" alt="CareerQue Logo" width={200} height={60} className="object-contain w-full h-full py-2" />
+              <Image src="/logo.jpg" alt="CareerQue Logo" width={200} height={60} className="object-contain w-full h-full py-1.5" />
             </motion.div>
           </div>
 
