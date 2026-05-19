@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Mail, MapPin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 py-12 md:py-16 transition-colors duration-300">
@@ -47,10 +48,49 @@ export function Footer() {
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Contact</h3>
-            <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-              <li><a href="mailto:info@careerque.com" className="hover:text-brand-teal transition-colors">Email</a></li>
-              <li><a href="#" className="hover:text-brand-teal transition-colors">WhatsApp</a></li>
-              <li><a href="#" className="hover:text-brand-teal transition-colors">LinkedIn</a></li>
+            <ul className="space-y-3.5 text-sm text-slate-500 dark:text-slate-400">
+              <li className="flex items-start space-x-1.5">
+                <MapPin className="h-5 w-5 text-brand-teal shrink-0 mt-0.5" />
+                <span className="leading-relaxed">
+                  <a className="hover:text-brand-teal transition-colors break-all" href="https://www.google.com/maps/place/PUSHKAR'S+KALPATARU/@13.102876,80.1840004,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5263d86c9c3989:0xd3881e00be99b43e!8m2!3d13.1028708!4d80.1865753!16s%2Fg%2F11stpgyczf?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
+                 H-68/2A, Pushkar&apos;s Kalpataru,<br />
+                  East Avenue Road, Korattur,<br />
+                  Chennai - 600080
+                  </a>
+                </span>
+              </li>
+              <li className="flex items-center space-x-2.5">
+                <Mail className="h-5 w-5 text-brand-teal shrink-0" />
+                <a 
+                  href="mailto:manikantanramachandran23@gmail.com" 
+                  className="hover:text-brand-teal transition-colors break-all"
+                >
+                  manikantanramachandran23@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center space-x-2.5">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5 text-brand-teal shrink-0"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <a 
+                  href="https://www.linkedin.com/in/manikantan-ramachandran-4620411b/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-brand-teal transition-colors"
+                >
+                  Manikantan Ramachandran
+                </a>
+              </li>
             </ul>
           </div>
         </div>
