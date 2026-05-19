@@ -30,13 +30,14 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center space-x-2">
           {/* Logo Space */}
-          <div className="h-12 w-48 flex items-center justify-start">
+          <div className="h-10 w-40 flex items-center justify-start">
             <Image
               src="/logo.jpg"
               alt="CareerQue Logo"
-              width={200}
-              height={48}
-              className="object-contain"
+              width={160}
+              height={40}
+              priority
+              className="object-contain w-auto h-auto max-h-10"
             />
           </div>
         </Link>
@@ -75,6 +76,7 @@ export function Navbar() {
         {/* Mobile Menu Toggle */}
         <div className="flex items-center md:hidden space-x-4">
           <button 
+            suppressHydrationWarning
             className="p-2 text-slate-600 dark:text-slate-300 z-50 relative" 
             aria-label="Toggle Menu"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -61,8 +61,8 @@ export function WhyCareerQue() {
              <div className="absolute inset-0 bg-gradient-to-br from-brand-teal/10 via-transparent to-brand-orange/10 mix-blend-overlay"></div>
              
              <div className="relative z-10 text-center">
-                <div className="w-24 h-24 mx-auto bg-brand-blue dark:bg-slate-800 rounded-full flex items-center justify-center shadow-xl mb-6 border-4 border-white dark:border-slate-700">
-                  <span className="text-3xl font-bold text-white">CQ</span>
+                <div className="mx-auto flex items-center justify-center mb-6 bg-white dark:bg-slate-800 rounded-xl p-4 shadow-xl border border-slate-200 dark:border-slate-700 max-w-[200px] md:max-w-[240px]">
+                  <img src="/logodark.jpeg" alt="CareerQue" className="w-full h-auto object-contain" />
                 </div>
                 <h3 className="text-2xl font-bold text-brand-blue dark:text-white mb-2">Practical Growth</h3>
                 <p className="text-slate-500 dark:text-slate-400 max-w-xs mx-auto">Built on decades of real-world organizational and learning experience.</p>

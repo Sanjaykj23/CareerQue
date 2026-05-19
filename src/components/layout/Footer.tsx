@@ -48,9 +48,9 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-brand-blue dark:text-brand-teal uppercase">Contact</h3>
             <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-              <li><a href="mailto:#" className="hover:text-brand-teal transition-colors">Email: To be added</a></li>
-              <li><a href="#" className="hover:text-brand-teal transition-colors">WhatsApp: To be added</a></li>
-              <li><a href="#" className="hover:text-brand-teal transition-colors">LinkedIn: To be added</a></li>
+              <li><a href="mailto:info@careerque.com" className="hover:text-brand-teal transition-colors">Email</a></li>
+              <li><a href="#" className="hover:text-brand-teal transition-colors">WhatsApp</a></li>
+              <li><a href="#" className="hover:text-brand-teal transition-colors">LinkedIn</a></li>
             </ul>
           </div>
         </div>

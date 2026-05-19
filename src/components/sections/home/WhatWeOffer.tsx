@@ -92,7 +92,7 @@ export function WhatWeOffer() {
               transition={{ delay: index * 0.1 + 0.2 }}
               className={`flex flex-col h-full rounded-3xl border ${offering.borderColor} bg-white dark:bg-slate-900 shadow-sm overflow-hidden transition-all hover:shadow-lg`}
             >
-              <div className="p-8 flex-1 flex flex-col">
+              <div className="p-6 md:p-8 flex-1 flex flex-col">
                 <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${offering.color}`}>
                   <offering.icon className="w-7 h-7" />
                 </div>

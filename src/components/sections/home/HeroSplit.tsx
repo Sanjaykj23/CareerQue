@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import { GraduationCap, Building2, Briefcase, Users } from "lucide-react";
 
 export function HeroSplit() {
@@ -40,7 +41,7 @@ export function HeroSplit() {
             <span>Career • Communication • Capability</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-brand-blue dark:text-white leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-brand-blue dark:text-white leading-[1.1]">
             Helping Students, Institutions, and Organizations <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-orange">
               Grow with Clarity and Confidence
@@ -77,9 +78,9 @@ export function HeroSplit() {
                 boxShadow: ["0px 0px 20px 0px rgba(0,166,166,0.2)", "0px 0px 60px 20px rgba(0,166,166,0.6)", "0px 0px 20px 0px rgba(0,166,166,0.2)"]
               }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="h-32 w-32 rounded-full border border-brand-teal/50 bg-slate-950/80 backdrop-blur-xl flex items-center justify-center z-20 shadow-2xl"
+              className="h-20 w-56 sm:h-24 sm:w-64 rounded-2xl border border-brand-teal/50 bg-slate-950/80 backdrop-blur-xl flex items-center justify-center z-20 shadow-2xl px-4 sm:px-6"
             >
-              <span className="text-xl font-bold text-white text-center leading-tight">Career<br/><span className="text-brand-teal">Que</span></span>
+              <Image src="/logo.jpg" alt="CareerQue Logo" width={200} height={60} className="object-contain w-full h-full py-2" />
             </motion.div>
           </div>
 
